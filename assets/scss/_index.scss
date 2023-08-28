@@ -2,8 +2,8 @@
 // hero section start
 .heroSection {
     background-color: $theming1;
-    position: relative;
     background-image: url(../img/index/herobg.svg);
+    height: 100vh;
     &::before {
         content: '';
         position: absolute;
@@ -103,6 +103,7 @@
 
 @include media-breakpoint-down(lg) {
     .heroSection {
+        height: 90vh;
         &::before {
         }
         &::after {
@@ -124,6 +125,7 @@
 
 @include media-breakpoint-down(md) {
     .heroSection {
+        height: 80vh;
         &::before {
         }
         &::after {
@@ -141,8 +143,8 @@
             font-size: 45px;
         }
         & .heroDetail {
-            font-size: 13px;
-            line-height: 22px;
+            // font-size: 13px;
+            // line-height: 22px;
             // text-align: center;
         } 
     }
@@ -150,6 +152,7 @@
 
 @include media-breakpoint-down(sm) {
     .heroSection {
+        height: 80vh;
         &::before {
         }
         &::after {
@@ -167,9 +170,9 @@
             font-size: 30px;
         }
         & .heroDetail {
-            font-size: 12px;
-            line-height: 22px;
-            text-align: center;
+            // font-size: 14px;
+            // line-height: 22px;
+            // text-align: center;
         } 
     }
 }
@@ -192,11 +195,10 @@
         background-size: contain;
         background-position: left top;
         filter: grayscale(1);
-
     }
     & .aboutImg {
         & img {
-            aspect-ratio: 5/5;
+            aspect-ratio: 5/4;
         }
         &::before {
             content: '';
@@ -608,6 +610,7 @@
         }
     }
 }
+
 @include media-breakpoint-down(md) {
     .counter {
         // background-color: $theming1;
@@ -1134,6 +1137,7 @@
 }
 @include media-breakpoint-down(xxl) {}
 @include media-breakpoint-down(xl) {}
+
 @include media-breakpoint-down(lg) {
     .testimonal {
         // padding-top: 35px;
@@ -1183,6 +1187,7 @@
         }
     }
 }
+
 @include media-breakpoint-down(md) {
     .testimonal {
         // padding-top: 35px;
@@ -1616,7 +1621,7 @@
     padding-top: 45px;
     padding-bottom: 45px;
     & .ctaContent {
-        height: 170px;
+        height: 210px;
         background-color: $theming1;
         & .ctasubheading {
             font-size: 20px;
@@ -1655,6 +1660,50 @@
         }
     }
 }
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+    .ctaSection {
+        & .ctaContent {
+            height: 170px;
+            & .ctasubheading {
+            }
+            & .ctaHeading {
+            }
+            & .plusAnimation {
+            }
+            & .ctaAnimation {
+                & img {
+                }
+            }
+            @keyframes plus {
+                0% {
+                }
+                100% {
+                }
+            }
+        }
+    }
+}
+
 // cta section end
 
 
