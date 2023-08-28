@@ -78,7 +78,7 @@
 
 @include media-breakpoint-down(lg) {
     .customBtn {
-        font-size: 13px;
+        // font-size: 13px;
         padding: 9px 26px;
         &::before {
         }
@@ -112,7 +112,7 @@
 
 @include media-breakpoint-down(sm) {
     .customBtn {
-        font-size: 12px;
+        // font-size: 12px;
         padding: 8px 24px;
         &::before {
         }

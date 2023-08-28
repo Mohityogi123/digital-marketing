@@ -242,7 +242,7 @@
             }
         }
         & .aboutdetail {
-            font-size: 13px;
+            // font-size: 13px;
         }
     }
 }
@@ -254,7 +254,7 @@
             }
         }
         & .aboutdetail {
-            font-size: 13px;
+            // font-size: 13px;
         }
     }
     
@@ -270,7 +270,7 @@
             }
         }
         & .aboutdetail {
-            font-size: 12px;
+            // font-size: 12px;
         }
     }
 }
@@ -298,6 +298,7 @@
             & .processImg {
                 background: lighten($theming1, 60) !important;
             }
+            cursor: pointer;
         }
     }
     & .cardMain {
@@ -1796,3 +1797,58 @@
     }
 }
 // contact modal end
+
+// faq section start 
+.faqSection {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    & .faqImg {
+        aspect-ratio: 6/5;
+    }
+    & .faqMain {
+        gap:5px;
+    }
+    & .faqBtn {
+        font-size: 16px;
+        font-weight: 500;
+        color: $black;
+        border-bottom: 1px solid lighten($black, 85);
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 2px;
+            height: 25px;
+            width: 25px;
+            border: 1.5px solid $theming1;
+            border-radius: 50%;
+            display: flex ;
+            align-items: center;
+            justify-content: center;
+            background: url(../img/index/accordion.svg) no-repeat;
+            background-position: center;
+            background-size: 13px;
+            transition: all 0.3s ease-in-out;
+        }
+        &:not(.collapsed) {
+            border-color: $theming1;
+            color: $theming1;
+            &::after {
+                background: url(../img/index/minus.svg) no-repeat;
+                background-position: center;
+                background-size: 13px;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+    & .faqbody {
+        // padding: ;
+        & .faqContent {
+            font-size: 14px;
+            font-weight: 400;
+            color: lighten($black, 50);
+        }
+    }
+}
+// faq section end

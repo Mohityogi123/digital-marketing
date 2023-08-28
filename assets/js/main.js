@@ -54,3 +54,22 @@ $(window).scroll(function() {
         a = 1;
     }
 });
+
+
+
+// show modal time 
+$(document).ready(function(){
+    showPopup();
+    });
+
+function showPopup(){
+if(localStorage.getItem('YesBtn') !== 1){
+    setTimeout(() => {
+    $('#contactus').modal('show');
+    $('#popup-yes').on('click', function(){
+        localStorage.setItem('YesBtn', 1);
+        $('#contactus').modal('hide');
+    })
+    }, 3000);
+}
+}
