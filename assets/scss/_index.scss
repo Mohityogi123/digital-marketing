@@ -1,4 +1,18 @@
 @charset "UTF-8";
+.toTop {
+    height: 40px;
+    width: 40px;
+    padding: 12px;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}
 // hero section start
 .heroSection {
     background-color: $theming1;
@@ -1802,6 +1816,18 @@
 .faqSection {
     padding-top: 48px;
     padding-bottom: 48px;
+    // &::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: -20px;
+    //     left: 0%;
+    //     height: 100%;
+    //     width: 100%;
+    //     background: url(../img/index/hero_shape.png) no-repeat;
+    //     z-index: 0;
+    //     background-position: left top;
+    //     background-size: contain;
+    // }
     & .faqImg {
         aspect-ratio: 6/5;
     }
@@ -1852,3 +1878,86 @@
     }
 }
 // faq section end
+
+// blog section start 
+.blogSection {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    & .blogCard {
+        & .blogImg {
+            aspect-ratio: 5/3;
+            & img {
+                transition: all 0.3s ease-in-out;
+            }
+            & .tag {
+                padding: 5px 8px;
+                right: 5px;
+                bottom: 5px;
+                font-size: 12px;
+            }
+        }
+        & .blogContent {
+            padding: 20px;
+            & .datemain {
+                padding-bottom: 12px;
+                & .date {
+                    font-size: 12px;
+                    color: $black;
+                }
+            }
+            & .cardHeading {
+                font-size: 16px;
+                font-weight: 600;
+                color: $black;
+                line-height: 22px;
+                &:hover {
+                    color: $theming1;
+                }
+            }
+            & .blogDetail {
+                font-size: 14px;
+                font-weight: 400;
+                color: lighten($black, 60);
+                line-height: 18px;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                padding-top: 8px;
+            }
+            & .readMore {
+                font-size: 14px;
+                font-weight: 500;
+                color: $theming1;
+                padding-top: 15px;
+                gap: 4px;
+                & .readMoreIcon {
+                    height:10px ;
+                    width: 15px;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+        &:hover {
+            & .blogImg {
+                & img {
+                    transform: rotate(3deg) scale(1.1);
+                }
+            }
+            & .blogContent {
+                & .cardHeading {
+                    &:hover {
+                    }
+                }
+                & .blogDetail {
+                }
+                & .readMore {
+                    & .readMoreIcon {
+                        transform: translateX(5px);
+                    }
+                }
+            }
+        }
+    }
+}
+// blog section end
