@@ -1,5 +1,6 @@
 .navbar {
     transition: all 0.3s ease-in-out;
+    height: 80px;
     & .navbar-brand {
         width: 70px;
     }
@@ -91,7 +92,7 @@
     &.fixed-navbar {
         background: $white;
         transition: all 0.3s ease-in-out;
-        box-shadow: 0 0.125rem 0.25rem #dee2e6cc;
+        box-shadow: 0 0.15rem 0.15rem #dee2e6cc;
         & .navbar-nav {
             & .nav-link {
                 color: $black;
@@ -280,6 +281,7 @@
 
 @include media-breakpoint-down(sm) {
     .navbar {
+        height: 60px;
         & .navbar-brand {
         }
         & .navbar-nav {
