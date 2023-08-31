@@ -57,7 +57,7 @@ $(window).scroll(function() {
 
 
 
-// // show modal time 
+// show modal time 
 // $(document).ready(function(){
 //     showPopup();
 //     });

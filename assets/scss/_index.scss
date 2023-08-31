@@ -2037,44 +2037,66 @@
                 width: 14px;
             }
         }
-        & .contactData {
-            gap: 16px;
-            & .inputCard{
-                height: 45px;
-                & .modalInput {
-                    font-size: 14px;
-                    font-weight: 400;
-                    color: lighten($black, 50);
-                    &:focus {
-                        border-color: #dee2e6;
-                        & .inputLabel {
-                            top: 0;
-                        }
-                    }
-                }
-                & .modalInput:-webkit-autofill,
-                .modalInput:-webkit-autofill:hover, 
-                .modalInput:-webkit-autofill:focus, 
-                .modalInput:-webkit-autofill:active{
-                    -webkit-box-shadow: 0 0 0 30px $white inset !important;
-                }
+    }
+}
+.contactData {
+    gap: 16px;
+    &.contactdatatwo {
+        gap: 0;
+        & .contacttext {
+            min-height: 100px;
+        }
+    }
+    & .inputCard{
+        height: 45px;
+        & .modalInput {
+            font-size: 14px;
+            font-weight: 400;
+            color: lighten($black, 50);
+            &:focus {
+                border-color: #dee2e6;
                 & .inputLabel {
-                    top: 50%;
-                    left: 10px;
-                    font-size: 14px;
-                    font-weight: 400;
-                    color: lighten($black, 50);
-                    transform: translateY(-50%);
-                    transition: all 0.3s ease-in-out;
-                }
-                & .modalInput:focus ~ .inputLabel {
-                    top: 0px;
-                    transform: translateY(-10px);
-                    background: linear-gradient(180deg, rgba(248,249,250,1) 49%, rgba(255,255,255,1) 52%);
-                    // font-size: 11px;
-                    // opacity: 1;
+                    top: 0;
                 }
             }
+        }
+        & .modalInput:-webkit-autofill,
+        .modalInput:-webkit-autofill:hover, 
+        .modalInput:-webkit-autofill:focus, 
+        .modalInput:-webkit-autofill:active{
+            -webkit-box-shadow: 0 0 0 30px $white inset !important;
+        }
+        & .inputLabel {
+            top: 50%;
+            left: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            color: lighten($black, 50);
+            transform: translateY(-50%);
+            transition: all 0.3s ease-in-out;
+        }
+        & .contactLabel {
+            top: 17px;
+            left: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            color: lighten($black, 50);
+            transform: translateY(-10px);
+            transition: all 0.3s ease-in-out;
+        }
+        & .modalInput:focus ~ .inputLabel {
+            top: 0px;
+            transform: translateY(-10px);
+            background: linear-gradient(180deg, rgba(248,249,250,1) 49%, rgba(255,255,255,1) 52%);
+            // font-size: 11px;
+            // opacity: 1;
+        }
+        & .modalInput:focus ~ .contactLabel {
+            top: 0px;
+            transform: translateY(-10px);
+            background: linear-gradient(180deg, rgba(248,249,250,1) 49%, rgba(255,255,255,1) 52%);
+            // font-size: 11px;
+            // opacity: 1;
         }
     }
 }
@@ -2110,23 +2132,26 @@
                     width: 13px;
                 }
             }
-            & .contactData {
-                gap: 12px;
-                & .inputCard{
-                    height: 40px;
-                    & .modalInput {
-                        font-size: 12px;
-                        &:focus {
-                            & .inputLabel {
-                                font-size: 12px;
-                            }
-                        }
-                    }
+        }
+    }
+    .contactData {
+        gap: 12px;
+        & .inputCard{
+            height: 40px;
+            & .modalInput {
+                font-size: 12px;
+                &:focus {
                     & .inputLabel {
                     }
-                    & .modalInput:focus ~ .inputLabel {
-                    }
                 }
+            }
+            & .inputLabel {
+                font-size: 12px;
+            }
+            & .contactLabel {
+                font-size: 12px;
+            }
+            & .modalInput:focus ~ .inputLabel {
             }
         }
     }

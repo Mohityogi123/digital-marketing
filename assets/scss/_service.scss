@@ -1,4 +1,6 @@
 .servicePage {
+    padding-top: 40px;
+    padding-bottom: 45px;
     &::before {
         content: '';
         position: absolute;
@@ -26,11 +28,14 @@
         border: 1px solid $theming1;
         transition: all 0.3s ease-in-out;
         padding: 20px 15px;
-        & .serviceImg {
-            width: 40px;
+        & .serviceimgMain {
             transition: all 0.3s ease-in-out;
-            & img {
-                filter: brightness(0);
+            & .serviceImg {
+                width: 40px;
+                height: 40px;
+                // filter: brightness(0);
+                // & img {
+                // }
             }
         }
         & .serviceHeading {
@@ -50,9 +55,53 @@
             word-wrap: break-word;/* Important for long words! */
         }
         &:hover {
-            & .serviceImg {
-                width: 40px;
-                margin-left: auto;
+            & .serviceimgMain {
+                transform: translateX( calc(100% - 40px));
+            }
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+    .servicePage {
+        padding-top: 30px;
+        &::before {
+            width: 150px;
+            height: 150px;
+        }
+        & .servicesCard {
+            & .serviceimgMain {
+                & .serviceImg {
+                }
+            }
+            & .serviceHeading {
+                font-size: 15px;
+            }
+            & .servicedetail {
+            }
+            &:hover {
+                & .serviceimgMain {
+                    transform: translateX( 0);
+                }
             }
         }
     }
