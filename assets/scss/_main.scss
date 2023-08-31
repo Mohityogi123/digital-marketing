@@ -19,3 +19,37 @@ body{
   font-family: 'Poppins', sans-serif;
   // overflow: hidden auto;
 }
+
+.headingPage {
+  height: 70vh;
+  background: url(../img/index/aboutuspage.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-color: rgba($black, 0.5);
+  }
+  & .headingmain {
+    font-size: 70px;
+  }
+  & .pagetab {
+    & .pagelink {
+      font-size: 14px;
+      font-weight: 500;
+      color: $white;
+      &.active {
+        color: darken($white, 30);
+      }
+      &::before {
+        color: $white;
+      }
+    }
+  }
+}

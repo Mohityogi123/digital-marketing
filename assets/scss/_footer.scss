@@ -49,6 +49,25 @@
         transition: all 0.3s ease-in-out;
         &:hover {
             transform: translateX(8px);
+            color: $white;
+        }
+    }
+    & .footerLinktwo {
+        font-size: 14px;
+        color: #cccccc;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            color: $white;
+        }
+        & .footericon {
+            min-width: 15px;
+            max-width: 15px;
+            &.location {
+                margin-top: 4px;
+            }
+            &.phone {
+                margin-top: 1px;
+            }
         }
     }
     & .footerInput {
@@ -206,6 +225,20 @@
         & .footerLink {
             font-size: 13px;
             &:hover {
+                transform: translate(0);
+                color: #cccccc;
+            }
+        }
+        & .footerLinktwo {
+            font-size: 13px;
+            &:hover {
+                color: #cccccc;
+            }
+            & .footericon {
+                &.location {
+                }
+                &.phone {
+                }
             }
         }
         & .footerInput {
