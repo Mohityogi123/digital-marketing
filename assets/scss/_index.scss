@@ -2035,6 +2035,45 @@
                 width: 14px;
             }
         }
+        & .contactData {
+            gap: 16px;
+            & .inputCard{
+                height: 45px;
+                & .modalInput {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: lighten($black, 50);
+                    &:focus {
+                        border-color: #dee2e6;
+                        & .inputLabel {
+                            top: 0;
+                        }
+                    }
+                }
+                & .modalInput:-webkit-autofill,
+                .modalInput:-webkit-autofill:hover, 
+                .modalInput:-webkit-autofill:focus, 
+                .modalInput:-webkit-autofill:active{
+                    -webkit-box-shadow: 0 0 0 30px $white inset !important;
+                }
+                & .inputLabel {
+                    top: 50%;
+                    left: 10px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: lighten($black, 50);
+                    transform: translateY(-50%);
+                    transition: all 0.3s ease-in-out;
+                }
+                & .modalInput:focus ~ .inputLabel {
+                    top: 0px;
+                    transform: translateY(-10px);
+                    background: linear-gradient(180deg, rgba(248,249,250,1) 49%, rgba(255,255,255,1) 52%);
+                    // font-size: 11px;
+                    // opacity: 1;
+                }
+            }
+        }
     }
 }
 // contact modal end
@@ -2345,7 +2384,7 @@
 @include media-breakpoint-down(lg) {
     .faqSection {
         & .faqImg {
-            aspect-ratio: 6/5;
+            aspect-ratio: 6/3;
             & img {
                 object-fit: contain;
             }
@@ -2419,6 +2458,9 @@
 .integrationSection {
     padding-top: 40px;
     padding-bottom: 45px;
+    background: url(../img/index/footer.png) no-repeat;
+    background-size: cover;
+    background-position: center;
     & .leftIcons {
     }
     & .googledrive {
@@ -2441,12 +2483,155 @@
         top: 20px;
     }
     & .brandtwo {
-
+    }
+    & .brandthree {
+        right: 100px;
+    }
+    & .dribbble {
+        top: -10px;
+        left: 20px;
+    }
+    & .line {
+        left: 70px;
+    }
+    & .brandfour {
+        top: 20px;
+        right: 40px;
+    }
+    & .brandfive {
+        left: 20px;
     }
     & .companyLogo {
         height: 60px;
-        width: 60px;
+        min-width: 60px;
+        max-width: 60px;
         padding: 11px;
     }
 }
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .integrationSection {
+        & .leftIcons {
+        }
+        & .googledrive {
+
+        }
+        & .snapchat {
+        }
+        & .google {
+        }
+        & .brandone {
+        }
+        & .figma {
+        }
+        & .brandtwo {
+        }
+        & .brandthree {
+            right:20px;
+        }
+        & .dribbble {
+            // top: -10px;
+            left: 0px;
+        }
+        & .line {
+            left: 40px;
+        }
+        & .brandfour {
+            right: 20px;
+        }
+        & .brandfive {
+            left: 20px;
+        }
+        & .companyLogo {
+            height: 60px;
+            width: 60px;
+            padding: 11px;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .integrationSection {
+        & .leftIcons {
+        }
+        & .googledrive {
+        }
+        & .snapchat {
+        }
+        & .google {
+        }
+        & .brandone {
+        }
+        & .figma {
+        }
+        & .brandtwo {
+        }
+        & .brandthree {
+        }
+        & .dribbble {
+        }
+        & .line {
+        }
+        & .brandfour {
+        }
+        & .brandfive {
+        }
+        & .companyLogo {
+            position: unset !important;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+    .integrationSection {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        & .leftIcons {
+        }
+        & .googledrive {
+        }
+        & .snapchat {
+        }
+        & .google {
+        }
+        & .brandone {
+        }
+        & .figma {
+        }
+        & .brandtwo {
+        }
+        & .brandthree {
+        }
+        & .dribbble {
+        }
+        & .line {
+        }
+        & .brandfour {
+        }
+        & .brandfive {
+        }
+        & .companyLogo {
+            height: 50px;
+            min-width: 50px;
+            max-width: 50px;
+            padding: 8px;
+        }
+    }
+}
+
 // integration section end

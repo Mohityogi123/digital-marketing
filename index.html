@@ -41,8 +41,8 @@
     <meta property="og:description" content="Discrption here">
     <meta property="og:image" content="assets/img/logo/favicon-original.png">
     <meta property="og:image:secure_url" content="assets/img/logo/favicon-original.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Navbar/favicon.svg" />
-    <link rel="icon" type="image/x-icon" href="assets/img/Navbar/favicon.svg" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Navbar/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="assets/img/Navbar/favicon.png" />
     <meta name="classification" content="Title here" />
     <link rel="canonical" href="" />
     <!-- jquery -->
@@ -69,14 +69,16 @@
     <nav class="navbar navbar-expand-lg container-fluid fixed-top shadowsm" aria-label="Offcanvas navbar large" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="javascript:;">
-                <img src="assets/img/Navbar/logo.svg" alt="logo" class="w-100 h-100 img-fluid">
+                <img src="assets/img/Navbar/header-logo.png" alt="logo" class="w-100 h-100 img-fluid">
             </a>
             <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="offcanvas offcanvas-start navOffcanvas bg-white" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
                 <div class="offcanvas-header border-bottom border-1 bord">
-                    <div class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</div>
+                    <div class="offcanvas-title" id="offcanvasNavbar2Label">
+                        <img src="assets/img/Navbar/header-logo.png" alt="logo">
+                    </div>
                     <button type="button" class="btn-close btn-close-white shadow-none border-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -105,10 +107,10 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link position-relative p-0" aria-current="page" href="#">About Us</a>
+                        <a class="nav-link position-relative p-0" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link position-relative p-0" aria-current="page" href="#">Contact Us</a>
+                        <a class="nav-link position-relative p-0" href="#" data-bs-toggle="modal" data-bs-target="#contactus">Contact Us</a>
                     </li>
                 </ul>
                 <div class="d-flex align-content-center justify-content-lg-center pt-lg-0 pt-4">
@@ -1669,51 +1671,188 @@
     </div>
     <!--* Faq section End -->
 
-    <!--* Faq section start -->
+    <!--* integration section start -->
     <div class="container-fluid integrationSection position-relative">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-3">
-                    <div class="leftIcons h-100 position-relative">
+            <div class="row align-items-center gap-lg-0 gap-2">
+                <div class="col-lg-3 order-lg-1 order-2">
+                    <div class="leftIcons d-lg-block overflow-x-auto flex-nowrap pb-lg-0 pb-2 px-lg-0 px-3 justify-content-center d-flex gap-lg-0 gap-sm-4 gap-3 h-100 position-relative">
                         <a href="javascript:;" class="companyLogo position-relative googledrive d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Google Drive">
                             <img src="assets/img/index/googledrive.png" alt="google drive" class="h-100 w-100 img-fluid">
                         </a>
-                        <a href="javascript:;" class="companyLogo position-relative snapchat ms-auto d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Google Drive">
-                            <img src="assets/img/index/goole.png" alt="google drive" class="h-100 w-100 img-fluid">
+                        <a href="javascript:;" class="companyLogo position-relative snapchat ms-lg-auto d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Google">
+                            <img src="assets/img/index/goole.png" alt="google " class="h-100 w-100 img-fluid">
                         </a>
                         <a href="javascript:;" class="companyLogo position-relative google d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Google Drive">
                             <img src="assets/img/index/brand1.png" alt="google drive" class="h-100 w-100 img-fluid">
                         </a>
-                        <a href="javascript:;" class="companyLogo position-relative brandone ms-auto d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Google Drive">
-                            <img src="assets/img/index/snapchat.png" alt="google drive" class="h-100 w-100 img-fluid">
+                        <a href="javascript:;" class="companyLogo position-relative brandone ms-lg-auto d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Snapchat">
+                            <img src="assets/img/index/snapchat.png" alt="snapchat" class="h-100 w-100 img-fluid">
                         </a>
-                        <a href="javascript:;" class="companyLogo position-relative figma d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Google Drive">
-                            <img src="assets/img/index/figma.png" alt="google drive" class="h-100 w-100 img-fluid">
+                        <a href="javascript:;" class="companyLogo position-relative figma d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Figma">
+                            <img src="assets/img/index/figma.png" alt="figma" class="h-100 w-100 img-fluid">
                         </a>
-                        <a href="javascript:;" class="companyLogo position-relative brandtwo ms-auto d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Google Drive">
+                        <a href="javascript:;" class="companyLogo position-relative brandtwo ms-lg-auto d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Google Drive">
                             <img src="assets/img/index/brand2.png" alt="google drive" class="h-100 w-100 img-fluid">
+                        </a>
+                        <a href="javascript:;" class="companyLogo d-lg-none  position-relative brandthree ms-lg-auto d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Google Drive">
+                            <img src="assets/img/index/brand3.png" alt="google drive" class="h-100 w-100 img-fluid">
+                        </a>
+                        <a href="javascript:;" class="companyLogo d-lg-none  position-relative dribbble d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="dribbble">
+                            <img src="assets/img/index/dribbble.png" alt="dribbble" class="h-100 w-100 img-fluid">
+                        </a>
+                        <a href="javascript:;" class="companyLogo d-lg-none  position-relative slack ms-lg-auto d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="slack">
+                            <img src="assets/img/index/slack.png" alt="slack" class="h-100 w-100 img-fluid">
+                        </a>
+                        <a href="javascript:;" class="companyLogo d-lg-none  position-relative line d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="line">
+                            <img src="assets/img/index/line.png" alt="line" class="h-100 w-100 img-fluid">
+                        </a>
+                        <a href="javascript:;" class="companyLogo d-lg-none  position-relative brandfour ms-lg-auto d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Google Drive">
+                            <img src="assets/img/index/brand4.png" alt="google drive" class="h-100 w-100 img-fluid">
+                        </a>
+                        <a href="javascript:;" class="companyLogo d-lg-none  position-relative brandfive d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Google Drive">
+                            <img src="assets/img/index/brand5.png" alt="google drive" class="h-100 w-100 img-fluid">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-xl-5 col-lg-6 order-lg-2 order-1">
                     <div class="text-center"><span class="subHeading position-relative">Integration</span></div>
                     <div class="Heading text-center pt-2">We Collaborate with Top Company in World</div>
+                    <div class="d-lg-flex d-none align-items-center justify-content-center pt-4">
+                        <a href="javascript:;" class="text-decoration-none customBtn btnthree position-relative rounded-pill overflow-hidden ">
+                            <span class="z-2 position-relative">View all Integration</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-3 order-3 d-lg-block d-none">
+                    <div class="rightIcon d-lg-block justify-content-center d-flex gap-lg-0 gap-4 position-relative">
+                        <a href="javascript:;" class="companyLogo position-relative brandthree ms-lg-auto d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Google Drive">
+                            <img src="assets/img/index/brand3.png" alt="google drive" class="h-100 w-100 img-fluid">
+                        </a>
+                        <a href="javascript:;" class="companyLogo position-relative dribbble d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="dribbble">
+                            <img src="assets/img/index/dribbble.png" alt="dribbble" class="h-100 w-100 img-fluid">
+                        </a>
+                        <a href="javascript:;" class="companyLogo position-relative slack ms-lg-auto d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="slack">
+                            <img src="assets/img/index/slack.png" alt="slack" class="h-100 w-100 img-fluid">
+                        </a>
+                        <a href="javascript:;" class="companyLogo position-relative line d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="line">
+                            <img src="assets/img/index/line.png" alt="line" class="h-100 w-100 img-fluid">
+                        </a>
+                        <a href="javascript:;" class="companyLogo position-relative brandfour ms-lg-auto d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Google Drive">
+                            <img src="assets/img/index/brand4.png" alt="google drive" class="h-100 w-100 img-fluid">
+                        </a>
+                        <a href="javascript:;" class="companyLogo position-relative brandfive d-flex align-items-center justify-content-center shadow-sm rounded-circle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Google Drive">
+                            <img src="assets/img/index/brand5.png" alt="google drive" class="h-100 w-100 img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 d-lg-none d-block order-last">
                     <div class="d-flex align-items-center justify-content-center pt-4">
                         <a href="javascript:;" class="text-decoration-none customBtn btnthree position-relative rounded-pill overflow-hidden ">
                             <span class="z-2 position-relative">View all Integration</span>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="rightIcon position-relative">
+            </div>
+        </div>
+    </div>
+    <!--* integration section End -->
 
+    <!--* footer start -->
+    <div class="container-fluid footer bg-theme1 position-relative rounded-top-5">
+        <div class="container">
+            <div class="row position-relative z-1 g-4">
+                <div class="col-lg-4 col-md-6">
+                    <a href="javscript:;" class="footerLogo d-flex align-items-center justify-content-center">
+                        <img src="assets/img/Navbar/header-logo.png" alt="logo" class="w-100">
+                    </a>
+                    <div class="footerdata pt-3 fw-normal">Excellence decisively nay man per impression maximum contrasted remarkably is perfect point. uncommonly solicitude inhabiting projection</div>
+                    <div class="socialmedia d-flex align-items-center ">
+                        <a href="javascript:;" class="d-flex align-items-center rounded-1 position-relative z-1 justify-content-center socialIcon border border-1 border-white">
+                            <img src="assets/img/index/whatsapp.svg" alt="whatsapp" class="h-100 w-100 img-fluid position-relative z-1">
+                        </a>
+                        <a href="javascript:;" class="d-flex align-items-center rounded-1 position-relative z-1 justify-content-center socialIcon border border-1 border-white">
+                            <img src="assets/img/index/facebook.svg" alt="facebool" class="h-100 w-100 img-fluid position-relative z-1">
+                        </a>
+                        <a href="javascript:;" class="d-flex align-items-center rounded-1 position-relative z-1 justify-content-center socialIcon border border-1 border-white">
+                            <img src="assets/img/index/instagram.svg" alt="instagram" class="h-100 w-100 img-fluid position-relative z-1">
+                        </a>
+                        <a href="javascript:;" class="d-flex align-items-center rounded-1 position-relative z-1 justify-content-center socialIcon border border-1 border-white">
+                            <img src="assets/img/index/twitter.svg" alt="twitter" class="h-100 w-100 img-fluid position-relative z-1">
+                        </a>
                     </div>
-
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="footerHeading">
+                        Explore
+                    </div>
+                    <ul class="list-unstyled footerMenu d-flex flex-column">
+                        <li><a href="javascript:;" class="footerLink fw-normal text-decoration-none d-block">Price</a></li>
+                        <li><a href="javascript:;" class="footerLink fw-normal text-decoration-none d-block">Features</a></li>
+                        <li><a href="javascript:;" class="footerLink fw-normal text-decoration-none d-block">Services</a></li>
+                        <li><a href="javascript:;" class="footerLink fw-normal text-decoration-none d-block">About us</a></li>
+                        <li><a href="javascript:;" class="footerLink fw-normal text-decoration-none d-block">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-md-3 col-6">
+                    <div class="footerHeading">
+                        Official Info
+                    </div>
+                    <div>
+                        <div class="footerSubheading">
+                            Address
+                        </div>
+                        <a href="javascript:;" class="footerLink fw-normal text-decoration-none d-block">543, Vaishali nagar , jaipur (Rajasthan) 302021</a>
+                    </div>
+                    <div class="offcialinfo">
+                        <div class="footerSubheading">
+                            Email:
+                        </div>
+                        <a href="javascript:;" class="footerLink fw-normal text-decoration-none d-block">Info@gmail.com</a>
+                    </div>
+                    <div class="offcialinfo">
+                        <div class="footerSubheading">
+                            Phone:
+                        </div>
+                        <a href="javascript:;" class="footerLink fw-normal text-decoration-none d-block">+91-1234505</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footerHeading">
+                        Newsletter
+                    </div>
+                    <div class="footerdata">Join our subscribers list to get the latest news and special offers.</div>
+                    <div class="mt-3">
+                        <div class="input-group border-1 align-items-center border border-white rounded-1 py-1">
+                            <input type="text" class="form-control footerInput border-0 bg-transparent shadow-none " placeholder="Your Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <button class="input-group-text p-0 me-3 sendBtn bg-transparent shadow-none border-0" id="basic-addon2">
+                                <img src="assets/img/index/send.svg" alt="send" class="h-100 w-100 img-fluid">
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--* Faq section End -->
+    <!--* footer End -->
+    <div class="container-fluid copyrightSection bg-white">
+        <div class="container">
+            <div class="row gap-lg-0 gap-sm-3 gap-2">
+                <div class="col-lg copyright text-lg-start text-center">
+                    Copyright 2023 <a href="index.html" class="copyright text-decoration-none">Market</a> | All Rights Reserved by <a href="javascript:;" class="copyright text-decoration-none">Img Global Infotech</a>
+                </div>
+                <div class="col-lg-auto text-lg-start">
+                    <div class="d-flex align-items-center flex-wrap justify-content-lg-start justify-content-center gap-sm-3 gap-2">
+                        <a href="javascript:;" class="copyright text-nowrap text-decoration-none">Privacy Policy </a>
+                        <span class="copyright">|</span>
+                        <a href="javascript:;" class="copyright text-nowrap text-decoration-none">Terms & Condition </a>
+                        <span class="copyright">|</span>
+                        <a href="javascript:;" class="copyright text-nowrap text-decoration-none">Support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--* navbar offcanvas End -->
     <!-- *Bootstrap Js* -->
@@ -1792,7 +1931,7 @@
     <!-- Modal -->
     <div class="modal fade contactModal" id="contactus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog contactDialog modal-dialog-scrollable modal-dialog-centered">
-            <div class="modal-content">
+            <div class="modal-content bg-light">
                 <div class="modal-header ContactHeader">
                     <div class="modal-title" id="exampleModalLabel">Contact Us</div>
                     <div class="d-flex align-items-center justify-content-center">
@@ -1801,13 +1940,46 @@
                         </button>
                     </div>
                 </div>
-                <div class="modal-body">
-                ...
+                <div class="modal-body py-4">
+                    <form action="" class="row contactData">
+                        <div class="col-12">
+                            <div class="inputCard position-relative">
+                                <input type="text" id="name" class="form-control modalInput h-100 shadow-none">
+                                <label for="name" class="inputLabel position-absolute px-2">Name</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="inputCard position-relative">
+                                <input type="tel" id="name" class="form-control modalInput h-100 shadow-none">
+                                <label for="name" class="inputLabel position-absolute px-2">Phone</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="inputCard position-relative">
+                                <input type="email" id="name" class="form-control modalInput h-100 shadow-none">
+                                <label for="name" class="inputLabel position-absolute px-2">Email</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="inputCard position-relative">
+                                <!-- <input type="text" id="name" class="form-control modalInput h-100 shadow-none"> -->
+                                <textarea name="" id=""class="form-control modalInput shadow-none"></textarea>
+                                <label for="name" class="inputLabel  position-absolute px-2">Message</label>
+                            </div>
+                        </div>
+                        <div class="col-12 pt-2">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a href="javascript:;" type="Submit" class="text-decoration-none customBtn btnthree position-relative rounded-pill overflow-hidden ">
+                                    <span class="z-2 position-relative">Submit</span>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="modal-footer">
+                <!-- <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
