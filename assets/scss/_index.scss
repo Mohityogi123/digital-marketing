@@ -168,6 +168,7 @@
 @include media-breakpoint-down(sm) {
     .heroSection {
         height: 80vh;
+        padding-top: 40px;
         &::before {
         }
         &::after {
@@ -2076,6 +2077,60 @@
         }
     }
 }
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+    .contactModal {
+        & .contactDialog {
+            & .ContactHeader {
+                & .modal-title {
+                    font-size: 18px;
+                }
+                & .btn-close {
+                    height: 13px;
+                    width: 13px;
+                }
+            }
+            & .contactData {
+                gap: 12px;
+                & .inputCard{
+                    height: 40px;
+                    & .modalInput {
+                        font-size: 12px;
+                        &:focus {
+                            & .inputLabel {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    & .inputLabel {
+                    }
+                    & .modalInput:focus ~ .inputLabel {
+                    }
+                }
+            }
+        }
+    }
+}
+
 // contact modal end
 
 // blog section start 
