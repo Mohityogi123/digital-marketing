@@ -2366,7 +2366,7 @@
     //     left: 0%;
     //     height: 100%;
     //     width: 100%;
-    //     background: url(../img/index/hero_shape.png) no-repeat;
+    //     background: url(../img/index/support-section-bg.webp) no-repeat;
     //     z-index: 0;
     //     background-position: left top;
     //     background-size: contain;
@@ -2513,9 +2513,20 @@
 .integrationSection {
     padding-top: 40px;
     padding-bottom: 45px;
-    background: url(../img/index/footer.png) no-repeat;
-    background-size: cover;
-    background-position: center;
+    &::before {
+        content: '';
+        position: absolute;
+        top:50%;
+        left:-26%;
+        height: 80%;
+        width: 80%;
+        background: url(../img/index/support-section-bg.webp) no-repeat;
+        z-index: 0;
+        background-position: left top;
+        background-size: contain;
+        transform: rotate(90deg);
+        
+    }
     & .leftIcons {
     }
     & .googledrive {
@@ -2620,6 +2631,11 @@
 
 @include media-breakpoint-down(lg) {
     .integrationSection {
+        &::before {
+            top:40%;
+            left:-26%;
+            
+        }
         & .leftIcons {
         }
         & .googledrive {
@@ -2650,12 +2666,51 @@
     }
 }
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+    .integrationSection {
+        &::before {
+            top:29%;
+            left:-26%;
+            
+        }
+        & .leftIcons {
+        }
+        & .googledrive {
+        }
+        & .snapchat {
+        }
+        & .google {
+        }
+        & .brandone {
+        }
+        & .figma {
+        }
+        & .brandtwo {
+        }
+        & .brandthree {
+        }
+        & .dribbble {
+        }
+        & .line {
+        }
+        & .brandfour {
+        }
+        & .brandfive {
+        }
+        & .companyLogo {
+        }
+    }
+}
 
 @include media-breakpoint-down(sm) {
     .integrationSection {
         padding-top: 30px;
         padding-bottom: 40px;
+        &::before {
+            top:5%;
+            left:-26%;
+            
+        }
         & .leftIcons {
         }
         & .googledrive {
