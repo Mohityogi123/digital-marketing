@@ -489,6 +489,7 @@
             }
             &:hover {
                 & .processImg {
+                    background-color: $white !important;
                 }
             }
         }
@@ -846,7 +847,7 @@
         & .serviceCard {
             &::before {
                 top: -21px;
-                right: -68px;
+                right: -68px !important;
                 transform: translate(0, 0);
                 visibility: visible;
                 opacity: 1;
@@ -1092,7 +1093,7 @@
                 padding: 12px 0;
                 & .userdetailmain {
                     position: unset !important;
-                    transform: translate(0, 0);
+                    transform: translate(0, 0) !important;
                     & .userName {
                         font-size: 14px;
                     }
