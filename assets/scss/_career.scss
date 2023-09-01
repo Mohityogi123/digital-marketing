@@ -2,6 +2,16 @@
 .workfacility {
     padding-top: 40px;
     padding-bottom: 45px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/index/ic_dot_bg.png);
+        background-position: center;
+    }
     & .facilityImg {
         aspect-ratio: 5/4;
     }
@@ -197,7 +207,19 @@
 
 // current job section start 
 .currentJob {
+    padding-top: 30px;
     padding-bottom: 40px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: url(../img/index/shape1.png) repeat;
+        background-position: center center;
+        // background-size: cover;
+    }
     & .jobtabs {
         & .joblink {
             font-size: 16px;

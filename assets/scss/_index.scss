@@ -2163,6 +2163,16 @@
 .blogSection {
     padding-top: 40px;
     padding-bottom: 48px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/index/ic_dot_bg.png);
+        background-position: center;
+    }
     & .blogCard {
         & .blogImg {
             aspect-ratio: 5/3;
@@ -2385,18 +2395,18 @@
 .faqSection {
     padding-top: 40px;
     padding-bottom: 48px;
-    // &::before {
-    //     content: '';
-    //     position: absolute;
-    //     top: -20px;
-    //     left: 0%;
-    //     height: 100%;
-    //     width: 100%;
-    //     background: url(../img/index/support-section-bg.webp) no-repeat;
-    //     z-index: 0;
-    //     background-position: left top;
-    //     background-size: contain;
-    // }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        background: url(../img/index/maps.png) no-repeat;
+        z-index: 0;
+        background-position: center;
+        background-size: cover;
+    }
     & .faqImg {
         aspect-ratio: 6/5;
     }
