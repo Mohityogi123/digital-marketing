@@ -1,0 +1,57 @@
+.workfacility {
+    padding-top: 40px;
+    padding-bottom: 45px;
+    & .facilityImg {
+        aspect-ratio: 5/4;
+    }
+    & .workfacilityContent {
+        & ul {
+            & li {
+                padding: 0 11px;
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 25%;
+                flex: 0 0 25%;
+                max-width: 25%;
+                &:nth-child(2) {
+                    margin-top: 30px;
+                }
+                &:nth-child(3) {
+                    margin-top: 60px;
+                }
+                &:nth-child(4) {
+                    margin-top: 90px;
+                }
+                & .facilityCard {
+                    background-color: $white;
+                    height: 160px;
+                    padding: 20px;
+                    -webkit-box-shadow: 0 0 8px 0 rgba($black,.2);
+                    box-shadow: 0 0 8px 0 rgba($black,.2);
+                    transition:all .3s ease-in-out;
+                    & .facilityIcon {
+                        height: 40px;
+                        width: 40px;
+                        & img {
+                            transition: all 0.3s ease-in-out;
+                        }
+                    }
+                    & .CardHeading {
+                        font-size: 15px;
+                        line-height: 1.4;
+                        color: $black;
+                        padding-top: 12px;
+                    }
+                    &:hover {
+                        background-color: $theming1;
+                        & .CardHeading {
+                            color: $white;
+                        }
+                        & img {
+                            filter:invert(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
