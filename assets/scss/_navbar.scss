@@ -45,6 +45,12 @@
                     transform: scaleX(1);
                 }
             }
+            &.active {
+                &::before {
+                    transform-origin: left;
+                    transform: scaleX(1);
+                }
+            }
         }
         & .navbarlink {
             padding-right: 16px !important;

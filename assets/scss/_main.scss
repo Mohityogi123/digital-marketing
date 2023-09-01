@@ -26,6 +26,12 @@ body{
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  &.careerHeading {
+    background: url(../img/index/careerheading.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   &::before {
     content: '';
     position: absolute;

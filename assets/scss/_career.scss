@@ -1,53 +1,111 @@
+// facility section start 
 .workfacility {
     padding-top: 40px;
     padding-bottom: 45px;
     & .facilityImg {
         aspect-ratio: 5/4;
     }
-    & .workfacilityContent {
-        & ul {
-            & li {
-                padding: 0 11px;
-                -webkit-box-flex: 0;
-                -ms-flex: 0 0 25%;
-                flex: 0 0 25%;
-                max-width: 25%;
+    & .cardMain {
+        & .cardInner {
+            &:nth-child(2) {
+                margin-top: 30px;
+            }
+            &:nth-child(3) {
+                margin-top: 60px;
+            }
+            &:nth-child(4) {
+                margin-top: 90px;
+            }
+            & .facilityCard {
+                background-color: $white;
+                height: 160px;
+                padding: 20px;
+                -webkit-box-shadow: 0 0 8px 0 rgba($black,.2);
+                box-shadow: 0 0 8px 0 rgba($black,.2);
+                transition:all .3s ease-in-out;
+                & .facilityIcon {
+                    height: 40px;
+                    width: 40px;
+                    & img {
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+                // &::before {
+                //     content: '';
+                //     position: absolute;
+                //     top: 0;
+                //     right: 0;
+                //     height: 100%;
+                //     width: 100%;
+                //     background: url(../img/index/dots.png);
+                //     background-position: center;
+                //     background-size: cover;
+                //     z-index: 0;
+                // }
+                & .CardHeading {
+                    font-size: 15px;
+                    line-height: 1.4;
+                    color: $black;
+                    padding-top: 12px;
+                }
+                &:hover {
+                    background-color: $theming1;
+                    & .CardHeading {
+                        color: $white;
+                    }
+                    & img {
+                        filter:invert(1);
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .workfacility {
+        padding-top: 30px;
+        & .facilityImg {
+            aspect-ratio: 5/2;
+            & img {
+                object-fit: contain;
+            }
+        }
+        & .cardMain{
+            & .cardInner{
                 &:nth-child(2) {
-                    margin-top: 30px;
                 }
                 &:nth-child(3) {
-                    margin-top: 60px;
                 }
                 &:nth-child(4) {
-                    margin-top: 90px;
                 }
                 & .facilityCard {
-                    background-color: $white;
-                    height: 160px;
-                    padding: 20px;
-                    -webkit-box-shadow: 0 0 8px 0 rgba($black,.2);
-                    box-shadow: 0 0 8px 0 rgba($black,.2);
-                    transition:all .3s ease-in-out;
                     & .facilityIcon {
-                        height: 40px;
-                        width: 40px;
+                        
                         & img {
-                            transition: all 0.3s ease-in-out;
                         }
                     }
                     & .CardHeading {
-                        font-size: 15px;
-                        line-height: 1.4;
-                        color: $black;
-                        padding-top: 12px;
                     }
                     &:hover {
-                        background-color: $theming1;
                         & .CardHeading {
-                            color: $white;
                         }
                         & img {
-                            filter:invert(1);
                         }
                     }
                 }
@@ -55,3 +113,120 @@
         }
     }
 }
+
+@include media-breakpoint-down(md) {
+    .workfacility {
+        & .facilityImg {
+            aspect-ratio: 5/3;
+        }
+        & .cardMain{
+            & .cardInner{
+                &:nth-child(2) {
+                    margin-top: 0;
+                }
+                &:nth-child(3) {
+                    margin-top: 0;
+                }
+                &:nth-child(4) {
+                    margin-top: 0;
+                }
+                & .facilityCard {
+                    & .facilityIcon {
+                        & img {
+                        }
+                    }
+                    & .CardHeading {
+                        font-size: 14px;
+                    }
+                    &:hover {
+                        & .CardHeading {
+                        }
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .workfacility {
+        & .facilityImg {
+            aspect-ratio: 5/3;
+        }
+        & .cardMain{
+            & .cardInner{
+                &:nth-child(2) {
+                    margin-top: 0;
+                }
+                &:nth-child(3) {
+                    margin-top: 0;
+                }
+                &:nth-child(4) {
+                    margin-top: 0;
+                }
+                & .facilityCard {
+                    height: 140px;
+                    padding: 16px;
+                    background-color: $theming1;
+                    & .facilityIcon {
+                        height: 35px;
+                        width: 35px;
+                        & img {
+                            filter:invert(1);
+                        }
+                    }
+                    & .CardHeading {
+                        font-size: 13px;
+                        color: $white;
+                    }
+                    &:hover {
+                        & .CardHeading {
+                        }
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// facility section end
+
+// current job section start 
+.currentJob {
+    & .jobtabs {
+        & .joblink {
+            font-size: 16px;
+            font-weight: 500;
+            color: $black;
+            border-bottom: 1px solid $theming1 !important;
+            padding: 12px 0;
+            transition: all 0.3s ease-in-out;
+            &.active {
+                background-color: $theming1;
+                color: $white;
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                top: 6px;
+                right: -18px;
+                background-color: #273F2C;
+                height: 36px;
+                width: 36px;
+                opacity: 0;
+                transform: rotate(45deg);
+                visibility: hidden;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+// current job section end
