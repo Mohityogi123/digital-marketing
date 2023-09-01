@@ -50,6 +50,12 @@ body{
     background-size: cover;
     background-attachment: fixed;
   }
+  &.portfoliHeading {
+    background: url(../img/index/portfolio.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   &::before {
     content: '';
     position: absolute;
